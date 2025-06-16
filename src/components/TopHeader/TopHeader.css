@@ -1,0 +1,94 @@
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 2.5em;
+  background: rgba(30, 30, 60, 0.25);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  box-sizing: border-box;
+}
+.top-header__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+.top-header__brand span:first-child {
+  font-size: 1.25em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.top-header__desc {
+  font-size: 0.95em;
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.04em;
+}
+.top-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.top-header__redes {
+  display: flex;
+  gap: 1em;
+}
+.top-header__redes a {
+  font-size: 1.5em;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+.top-header__redes a:hover {
+  background: linear-gradient(90deg, #ff6ec4 0%, #7873f5 100%);
+  color: #fff;
+  transform: scale(1.13) rotate(-6deg);
+}
+.top-header__contact {
+  background: linear-gradient(90deg, #ff6ec4 0%, #7873f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  padding: 0.6em 1.6em;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 1em;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+.top-header__contact:hover {
+  background: linear-gradient(90deg, #7873f5 0%, #ff6ec4 100%);
+  transform: scale(1.07);
+}
+
+@media (max-width: 700px) {
+  .top-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    gap: 0.7em;
+  }
+  .top-header__actions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+}

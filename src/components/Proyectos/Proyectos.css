@@ -1,0 +1,67 @@
+.proyectos-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.proyectos-title {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.proyecto-icon {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.proyectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.proyecto-card {
+  width: 260px;
+  min-height: 180px;
+  background: rgba(255,255,255,0.13);
+  border-radius: 1.5em;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 1.5em 1.5em 1.5em;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+  border: none;
+}
+.proyecto-card:hover {
+  transform: translateY(-10px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.18);
+}
+.proyecto-card strong {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  color: #ff6ec4;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+.proyecto-card p {
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1em;
+  color: #fff;
+}
+.proyecto-card a {
+  color: #ff6ec4;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.2s;
+}
+.proyecto-card a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
