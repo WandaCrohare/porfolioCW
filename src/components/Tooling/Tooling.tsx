@@ -32,20 +32,12 @@ export function Tooling() {
           <span style={{ color: '#7ee787', fontFamily: 'monospace', fontSize: '1.5em' }}>Figma</span>
         </div>
         <div style={{ background: '#181818', borderRadius: '1em', padding: '2em', display: 'flex', alignItems: 'center', gap: '1em', minWidth: 200 }}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" style={{ width: 40, height: 40 }} />
-          <span style={{ color: '#7ee787', fontFamily: 'monospace', fontSize: '1.5em' }}>Sass</span>
-        </div>
-        <div style={{ background: '#181818', borderRadius: '1em', padding: '2em', display: 'flex', alignItems: 'center', gap: '1em', minWidth: 200 }}>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Typescript" style={{ width: 40, height: 40 }} />
           <span style={{ color: '#7ee787', fontFamily: 'monospace', fontSize: '1.5em' }}>Typescript</span>
         </div>
         <div style={{ background: '#181818', borderRadius: '1em', padding: '2em', display: 'flex', alignItems: 'center', gap: '1em', minWidth: 200 }}>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" alt="Solidity" style={{ width: 40, height: 40 }} />
           <span style={{ color: '#7ee787', fontFamily: 'monospace', fontSize: '1.5em' }}>Solidity</span>
-        </div>
-        <div style={{ background: '#181818', borderRadius: '1em', padding: '2em', display: 'flex', alignItems: 'center', gap: '1em', minWidth: 200 }}>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/polygon/polygon-original.svg" alt="Polygon" style={{ width: 40, height: 40 }} />
-          <span style={{ color: '#7ee787', fontFamily: 'monospace', fontSize: '1.5em' }}>Polygon</span>
         </div>
       </div>
     </section>
