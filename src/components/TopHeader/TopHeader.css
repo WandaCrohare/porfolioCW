@@ -8,11 +8,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2em 2.5em;
-  background: rgba(30, 30, 60, 0.25);
-  backdrop-filter: blur(8px);
   color: #fff;
-  font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+  font-family: 'Oswald';
   box-sizing: border-box;
+  background: #111111;
 }
 .top-header__brand {
   display: flex;
