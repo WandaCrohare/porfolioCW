@@ -2,34 +2,37 @@ import './TopHeader.css';
 
 const redes = [
   {
-    name: 'Instagram',
-    url: 'https://instagram.com/tu_usuario',
-    icon: '📸',
+    name: 'About Me',
+    url: '',
   },
   {
-    name: 'Telegram',
-    url: 'https://t.me/tu_usuario',
-    icon: '✈️',
+    name: 'What can I do?',
+    url: '',
   },
   {
-    name: 'LinkedIn',
-    url: 'https://linkedin.com/in/tu_usuario',
-    icon: '💼',
+    name: 'Clients Say',
+    url: '',
   },
   {
-    name: 'Calendly',
-    url: 'https://calendly.com/tu_usuario',
-    icon: '📅',
+    name: 'Book a Meeting',
+    url: 'https://calendly.com/d/cs2h-5s3-p3m/15-minute-meeting',
   },
 ];
 
 export function TopHeader() {
   return (
     <nav className="top-header">
-      <div className="top-header__brand">
-        <span>WANDA CROHARÉ</span>
-        <span className="top-header__desc">Designer, Developer, IA, Solutions.</span>
+      
+      <div className="top-header__logo-container">
+        <a href="/" className="top-header__logo-link">
+          <img src="src/assets/logo.png" alt="Wanda Croharé" className="top-header__logo" />
+        </a>
+        <div className="top-header__brand">
+          <span>WANDA CROHARÉ</span>
+          <span className="top-header__desc">Designer, Developer, IA, Solutions.</span>
+        </div>
       </div>
+
       <div className="top-header__actions">
         <div className="top-header__redes">
           {redes.map((r) => (
@@ -40,7 +43,7 @@ export function TopHeader() {
               rel="noopener noreferrer"
               aria-label={r.name}
             >
-              {r.icon}
+              {r.name}
             </a>
           ))}
         </div>

@@ -66,9 +66,9 @@
 
 /* Fondo rosa con manchas tipo blobs/gradientes */
 .hero-bg {
-  min-height: 100vh;
+  height: 917px;
   width: 100vw;
-  background: linear-gradient(120deg, #e97bb0 0%, #e97bb0 100%);
+  background: linear-gradient(120deg, #e97bb0 0%, #fc7f9a 100%);
   position: relative;
   display: flex;
   align-items: center;
@@ -77,27 +77,67 @@
   flex-direction: column;
 }
 
-.hero-bg::before, .hero-bg::after {
+.hero-bg::before, .hero-bg::after, .hero-bg .blob-light1, .hero-bg .blob-light2, .hero-bg .blob-light3 {
   content: '';
   position: absolute;
   border-radius: 50%;
   filter: blur(60px);
   opacity: 0.7;
   z-index: 1;
+  animation: blobPulse 8s ease-in-out infinite alternate, blobWave 14s ease-in-out infinite alternate;
 }
+
+.hero-bg .blob-light1, .hero-bg .blob-light2 {
+  background: radial-gradient(circle, #ff0000ab 0%, transparent 55%);
+  opacity: 1;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero-bg .blob-light3 {
+  background: radial-gradient(circle, #ff7630 0%, transparent 75%);
+  opacity: 1;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.hero-bg .blob-light1 {
+  width: 30vw;
+  height: 30vw;
+  top: 120px;
+  right: 12vw;
+  animation-delay: 2s, 3s;
+}
+
+.hero-bg .blob-light2 {
+  width: 40vw;
+  height: 40vw;
+  top: -15vh;
+  right: 38vw;
+  animation-delay: 4s, 7s;
+}
+
+.hero-bg .blob-light3 {
+  width: 500px;
+  height: 500px;
+  top: 20vh;
+  left: 20vw;
+  animation-delay: 6s, 9s;
+}
+
 .hero-bg::before {
   width: 400px;
   height: 400px;
   top: -80px;
   left: 60vw;
-  background: radial-gradient(circle, #a8006b 0%, transparent 70%);
+  background: radial-gradient(circle, #96f573 0%, transparent 70%);
 }
 .hero-bg::after {
-width: 450px;
-    height: 450px;
-    top: 360px;
-    left: 2vw;
-    background: radial-gradient(circle, #a8006b 0%, transparent 70%);
+  width: 450px;
+  height: 450px;
+  top: 360px;
+  left: 2vw;
+  background: radial-gradient(circle, #ff008d 0%, transparent 70%);
 }
 
 .hero-bg-overlay {
@@ -252,5 +292,38 @@ width: 450px;
   }
   .hero-desc-text {
     font-size: 1em;
+  }
+}
+
+@keyframes blobPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blobWave {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  20% {
+    transform: translateX(60px) scale(1.08);
+  }
+  40% {
+    transform: translateX(120px) scale(1.12);
+  }
+  60% {
+    transform: translateX(200px) scale(1.1);
+  }
+  80% {
+    transform: translateX(120px) scale(1.08);
+  }
+  100% {
+    transform: translateX(0) scale(1);
   }
 }

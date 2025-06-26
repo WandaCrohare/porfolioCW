@@ -4,7 +4,9 @@ export function Hero() {
   return (
 
     <section className="hero-bg">
-
+      <div className="blob-light1"></div>
+      <div className="blob-light2"></div>
+      <div className="blob-light3"></div>
       <div className="hero-bg-overlay">
 
         <div className="hero-card">
@@ -21,7 +23,7 @@ export function Hero() {
             <div className="hero-card-right">
               <div className="hero-bar"></div>
               <div className="hero-desc-text">
-                <span>Hago cositas<br/>para la web</span>
+                <span>Hago cositas<br/>para la web ᢉ𐭩</span>
               </div>
             </div>
           </div>
