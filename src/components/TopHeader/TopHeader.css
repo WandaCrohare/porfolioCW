@@ -83,7 +83,20 @@
 .top-header__contact:hover {
   background: linear-gradient(90deg, #f65a70 0%, #ff6ec4 100%);
   transform: scale(1.07);
+  color: #fff;
 }
+
+.clic-pic {
+  position: absolute;
+  right: 60px;
+  top: 65px;
+  width: 200px;
+}
+
+.clic-pic:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
+}   
 
 @media (max-width: 700px) {
   .top-header {

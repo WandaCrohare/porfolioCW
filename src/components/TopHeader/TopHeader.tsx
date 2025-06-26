@@ -10,7 +10,7 @@ const redes = [
     url: '',
   },
   {
-    name: 'Clients Say',
+    name: 'People Say',
     url: '',
   },
   {
@@ -25,7 +25,7 @@ export function TopHeader() {
       
       <div className="top-header__logo-container">
         <a href="/" className="top-header__logo-link">
-          <img src="src/assets/logo.png" alt="Wanda Croharé" className="top-header__logo" />
+          <img src="/assets/logo.png" alt="Wanda Croharé" className="top-header__logo" />
         </a>
         <div className="top-header__brand">
           <span>WANDA CROHARÉ</span>
@@ -49,6 +49,10 @@ export function TopHeader() {
         </div>
         <a href="#contacto" className="top-header__contact">Contact me</a>
       </div>
+
+      <img src="/assets/clic.svg" alt="clic" className="clic-pic" />
+
     </nav>
+    
   );
 }
