@@ -1,3 +1,15 @@
+.contact {
+  background: url(/assets/wandangel.png) center center / cover no-repeat;
+  width: 100vw;
+  padding: 10em 0;
+}
+
+.card-bg {
+  max-width: 700px; 
+  margin-top: '2em'; 
+  text-align: center;
+}
+
 .contacto-redes {
   display: flex;
   justify-content: center;
@@ -22,4 +34,84 @@
   background: linear-gradient(90deg, #ff6ec4 0%, #7873f5 100%);
   color: #fff;
   transform: scale(1.13) rotate(-6deg);
+}
+
+.contact-card {
+  background: #111111cf;
+  box-shadow: 0 8px 40px 0 rgba(185,113,238,0.18);
+  border-radius: 1.2em;
+  padding: 3.5em 2.5em 2.5em 2.5em;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #d1a0c3;
+  margin: 0 0 1.2rem 0;
+  text-shadow: 0 2px 16px #b971ee55;
+}
+
+.contact-desc {
+  font-family: monospace;
+  font-size: 1.25rem;
+  color: #fff;
+  opacity: 0.92;
+  margin-bottom: 1.1rem;
+  line-height: 1.5;
+}
+
+.contact-question {
+  display: block;
+  font-family: 'Pacifico', cursive;
+  color: #f5ee73;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 2.2rem;
+  background: linear-gradient(90deg, #b971ee 0%, #f5ee73 100%);
+  color: #111;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2em;
+  padding: 0.9em 2.2em;
+  box-shadow: 0 4px 24px #b971ee44;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  cursor: pointer;
+}
+.contact-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 8px 32px #b971ee88;
+  background: linear-gradient(90deg, #f5ee73 0%, #b971ee 100%);
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    padding: 1.2em 0.7em 1.2em 0.7em;
+    max-width: 99vw;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.7em 1.2em;
+  }
 }

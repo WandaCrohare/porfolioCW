@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.teams {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-align: left!important;
+  display: flex;
+}
+.teams h1 {
+  font-size: 10.5rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-shadow: 0 2px 16px #ff6ec4aa;
+  text-transform: uppercase;
+  font-family: 'Oswald', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.teams h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+  font-size:2.5rem !important;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  text-align: left;
+}
+.teams p {
+  margin: 1.5em 0 0 0!important;
+  padding: 0;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+.teams button {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin: 0;
+  text-shadow: 0 2px 16px #ff6ec4aa;
+  text-transform: uppercase;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+.teams img {
+  margin-top: 0;
+}
+
+.teams .teams-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 40vw;
+}
+
+.team-break-color {
+  width: 120vw;
+  height: 80px;
+  background: #ffe580;
+  margin: 0 0 60px -20vw;
+}
+
+/* Fondo rosa con manchas tipo blobs/gradientes */
+.teams-bg {
+  height: 1900px;
+  width: 100vw;
+  background: #ffe580;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.teams-bg-overlay {
+  width: 100vw;
+}
+
+.teams-card {
+  background: #111;
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.18);
+  z-index: 2;
+  position: absolute;
+  padding: 5em 25em 5em 15em;
+  left: 0;
+  top: 9em;
+  width: auto;
+}
+
+.teams-me {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.teams-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.teams-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.teams-nombre {
+  color: #f5ee73;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: 0 0 -13px 0px;
+  line-height: 1.1;
+}
+
+.teams-nombre-2 {
+  color: #f5ee73;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: 0 0 -13px 0px;
+  line-height: 1.1;
+}
+
+.span-small {
+  position: absolute;
+  left: 13.6em;
+  font-size: 49px;
+  top: 3.75em;
+  font-family: 'Playfair Display';
+}
+
+.teams-titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+
+.teams-titulos-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+
+.teams-design, .teams-dev {
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 6.5em;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.teams-design-2 {
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 6.5em;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.teams-card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 2.5em;
+  position: absolute;
+  top: 14.2em;
+  left: 24.4em;
+}
+
+.teams-bar {
+  width: 5px;
+  height: 100px;
+  background: #e97bb0;
+  border-radius: 3px;
+  margin-right: 1.5em;
+  margin-top: 0.2em;
+}
+
+.teams-desc-text {
+  color: #fff;
+  font-family: 'Pacifico';
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1.1;
+  text-align: left;
+  margin-top: 0.25em;
+}
+
+.teams-me {
+  position: absolute;
+  z-index: 10;
+  left: 54em;
+  top: 40px;
+  width: 800px;
+}
+
+.teams-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.profile-picture {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  top: 3em;
+  right: -10em;
+  margin: 0;
+}
+.profile-picture img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  margin-bottom: 1.5em;
+  margin: 80px 50px;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.profile-picture:hover img:first-child {
+  transform: scale(1.07) rotate(-30deg);
+  box-shadow: 0 8px 32px 0 rgba(255,110,196,0.25);
+}
+.profile-icon {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  transform: translate(-10%) scale(1.2);
+  opacity: 0;
+  transition: opacity 0.1s, left 0.5s;
+  width: 30px!important;
+  height: 30px!important;
+  z-index: 2;
+  border: none!important;
+}
+.profile-picture:hover .profile-icon {
+  opacity: 1;
+  left: -20px;
+  transform: scale(8) rotate(-8deg);
+  box-shadow: none;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), opacity 0.3s;
+}
+
+.social-glass-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  z-index: 8;
+  top: 20px;
+  background: #ffffff38;
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  border: solid 3px #fff;
+}
+
+@media (max-width: 900px) {
+  .teams-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 1.2em;
+  }
+  .teams-card-right {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+  .teams-design, .teams-dev {
+    font-size: 3.2em;
+  }
+  .teams-bar {
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .teams-card {
+    max-width: 99vw;
+    padding: 0;
+  }
+  .teams-card-content {
+    padding: 1.2em 0.5em;
+  }
+  .teams-nombre {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .teams-design, .teams-dev {
+    font-size: 2em;
+  }
+  .teams-bar {
+    height: 50px;
+    margin-right: 0.7em;
+  }
+  .teams-desc-text {
+    font-size: 1em;
+  }
+}

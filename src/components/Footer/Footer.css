@@ -1,12 +1,12 @@
 .footer {
   width: 100%;
   padding: 2em 0 1em 0;
-  background: transparent;
   text-align: center;
-  color: #bfc9d1;
+  color: #ffffff;
   font-size: 1em;
   letter-spacing: 0.03em;
   margin-top: 4em;
+  background: #111;
 }
 
 .footer-content {
@@ -20,9 +20,12 @@
   font-family: 'Oswald', Arial, sans-serif;
   font-size: 1.05em;
   margin-bottom: 0.2em;
-  color: #bfc9d1;
-  opacity: 0.85;
+  color: #fff;
+  opacity: 1;
   letter-spacing: 0.04em;
+}
+.footer-built span {
+  font-family: 'Pacifico', cursive;
 }
 
 .footer-social {
@@ -37,7 +40,6 @@
 .footer-icon {
   color: #7fffd4;
   font-family: 'Oswald', Arial, sans-serif;
-  opacity: 0.85;
   font-size: 1.2em;
   vertical-align: middle;
   transition: color 0.2s, opacity 0.2s;
@@ -53,7 +55,6 @@
   font-family: 'Oswald', Arial, sans-serif;
   font-size: 1em;
   margin: 0 0.2em;
-  opacity: 0.85;
 }
 
 @media (max-width: 600px) {

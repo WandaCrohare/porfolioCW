@@ -52,9 +52,11 @@ export function About() {
               Me gusta crear productos funcionales, claros y bien pensados para vos. Creo en la tecnología y el diseño con propósito. El poder de las buenas ideas!
               <br /> <br />
               También me gustan el café, los libros y el chocolate.
+
+               <button>Saber Más</button>
             </p>
 
-            <button>Saber Más</button>
+           
             
           </div>
 

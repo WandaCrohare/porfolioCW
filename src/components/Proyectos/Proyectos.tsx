@@ -8,7 +8,7 @@ export function Proyectos() {
           <div className="proyectos-card-left">
             <div className="proyectos-titulos">
                 <span className="proyectos-nombre">Entonces...</span>
-              <span className="proyectos-design">¿Qué puedo</span>
+              <span className="proyectos-design">¿Qué podés</span>
               <span className='proyectos-span-small'></span>
               <span className="proyectos-dev">hacer?</span>
             </div>
