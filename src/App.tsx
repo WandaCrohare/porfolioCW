@@ -1,7 +1,7 @@
 import './App.css'
 import { TopHeader } from './components/TopHeader/TopHeader';
 import { Hero } from './components/Hero/Hero';
-import { HeroAngel } from './components/HeroAngel/HeroAngel';
+// import { HeroAngel } from './components/HeroAngel/HeroAngel';
 import { Proyectos } from './components/Proyectos/Proyectos';
 import { About } from './components/About/About';
 import { Contacto } from './components/Contacto/Contacto';
