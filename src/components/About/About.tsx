@@ -1,40 +1,62 @@
+import { useEffect, useRef, useState } from 'react';
 import './About.css';
 
+const SOBRE_MI_ANIMADO = 'Sobre Mi:';
+
 export function About() {
+  const [sobreMiAnimado, setSobreMiAnimado] = useState('');
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!spanRef.current || hasAnimated) return;
+      const rect = spanRef.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.8) {
+        let i = 0;
+        const interval = setInterval(() => {
+          setSobreMiAnimado(SOBRE_MI_ANIMADO.slice(0, i + 1));
+          i++;
+          if (i === SOBRE_MI_ANIMADO.length) {
+            clearInterval(interval);
+            setHasAnimated(true);
+          }
+        }, 80);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    // Trigger on mount in case already visible
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [hasAnimated]);
+
   return (
-    <section className="card">
-      <div className='hero-content'>
-        <div className='hero-text'>
-          <h1>Diseño y desarrollo web</h1>
-          <h2>con propósito</h2>  
-          <p>
-            Me apasiona crear experiencias digitales que sean funcionales, accesibles y centradas en el usuario.
-          </p>  
-          <p>
-            Con más de 10 años de experiencia, he trabajado con empresas y emprendedores para llevar sus ideas a la realidad.
-          </p>    
+    <section className="card-description">
 
+          <div className='profile-picture-2'>
+            <img src="/assets/me.jpeg" alt="Me" />
+            <img src="/assets/stars.svg" alt="stars" className="profile-icon" />
 
-          <p>
-            Si buscás una aliada para diseñar, desarrollar o escalar tu idea digital, estoy para ayudarte!
-          </p>
-          <button>CONTACTO</button>
-        </div>
-      
-        <div style={{ margin: '2em 0' }}>
-          <img src="/vite.svg" alt="Imagen principal" style={{ width: 120, borderRadius: '50%', boxShadow: '0 4px 24px 0 rgba(0,0,0,0.15)' }} />
-        </div>
-      </div>
+            <span className="about-text">
+              Si buscás una aliada para diseñar, desarrollar o escalar tu idea digital<br /> ¡Estoy para ayudarte!
+            </span>
+          </div>
 
-      <div className='hero-description'>
-        <p>
-          Soy Wanda Croharé, desarrolladora web, diseñadora UX/UI y estratega digital. Trabajo con empresas, agencias y emprendedores de Argentina y otros países.
-          <br />
-          Me gusta crear productos funcionales, claros y bien pensados para vos. Me interesan la tecnología y el diseño con propósito. El poder de las buenas ideas!
-          También me gustan el café, los libros y el chocolate.
-        </p>
-      </div>
+          <div className='about-description'>
+            <span className="about-nombre" ref={spanRef}>{sobreMiAnimado}</span>
+            <p>
+              Soy Wanda Croharé, desarrolladora web, diseñadora UX/UI y estratega digital. 
+              <br />
+              Con 14 años de experiencia, he trabajado con emprendedores y empresas para llevar sus ideas a la realidad.
+              <br /> <br />
+              Me gusta crear productos funcionales, claros y bien pensados para vos. Creo en la tecnología y el diseño con propósito. El poder de las buenas ideas!
+              <br /> <br />
+              También me gustan el café, los libros y el chocolate.
+            </p>
 
+            <button>Saber Más</button>
+            
+          </div>
 
     </section>
   );

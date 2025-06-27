@@ -1,0 +1,33 @@
+.hero {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin: 0;
+  text-shadow: 0 2px 16px #ff6ec4aa;
+  text-transform: uppercase;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+.hero h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0.5em 0 0 0;
+  color: #ffe6fa;
+  letter-spacing: 0.05em;
+  font-family: 'Oswald', Arial, sans-serif;
+}
+.hero p {
+  margin: 1.5em 0 0 0;
+  font-size: 1.2em;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero img {
+  margin-top: 2em;
+}

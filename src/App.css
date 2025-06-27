@@ -58,17 +58,20 @@ body {
 }
 
 button {
-  background: linear-gradient(90deg, #ff6ec4 0%, #7873f5 100%);
+  background: linear-gradient(90deg, #ff6ec4 0%, #f65a70 100%);
   color: #fff;
   border: none;
-  border-radius: 2em;
-  padding: 0.8em 2em;
-  font-size: 1.2em;
-  font-family: inherit;
+  border-radius: 1.2em;
+  padding: 0.6em 1.6em;
+  font-size: 1.5em;
+  font-family: monospace;
+  font-weight: 600;
   cursor: pointer;
-  margin: 1em 0;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  margin: 2em 0;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+  text-decoration: none;
   transition: background 0.3s, transform 0.2s;
+  display: inline-block;
 }
 button:hover {
   background: linear-gradient(90deg, #7873f5 0%, #ff6ec4 100%);

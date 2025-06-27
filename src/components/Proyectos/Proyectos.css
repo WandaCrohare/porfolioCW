@@ -65,3 +65,203 @@
   color: #fff;
   text-decoration: underline;
 }
+
+/* Fondo azul/celeste con blobs animados */
+.proyectos-hero-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(120deg, #6dd5ed 0%, #2193b0 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.proyectos-card {
+  background: #111;
+  max-width: 900px;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 0;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  z-index: 2;
+  position: relative;
+  padding: 0;
+}
+.proyectos-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 3.5em 3em 3.5em 3em;
+}
+.proyectos-card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+}
+.proyectos-nombre {
+  color: #f5ee73;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.4em;
+  font-weight: 700;
+  margin: 0.8em 0 1.5em -10px;
+  display: block;
+  text-align: left;
+}
+.proyectos-titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+}
+.proyectos-design, .proyectos-dev {
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 5.5em;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+.proyectos-span-small {
+  position: absolute;
+  left: 11em;
+  font-size: 49px;
+  top: 3.75em;
+  font-family: 'Playfair Display';
+  color: #00c6fb;
+}
+.proyectos-card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 2.5em;
+  position: absolute;
+  top: 20em;
+  left: 0;
+}
+.proyectos-bar {
+  width: 8px;
+  height: 300px;
+  background: #00c6fb;
+  border-radius: 1px;
+  margin-right: 1.5em;
+  margin-top: -11.2em;
+}
+.proyectos-desc-text {
+  color: #fff;
+  font-family: 'Montserrat', 'Playfair Display', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+  margin-top: 0.2em;
+}
+.proyectos-lista {
+  position: relative;
+  margin: 3em 0 0 40px;
+  padding: 0 0 0 60px;
+  list-style: none;
+  border-left: 8px solid;
+  border-image: linear-gradient(to bottom, #00c6fb, #ff6ec4, #f5ee73) 1;
+  min-width: 340px;
+  max-width: 600px;
+}
+.proyectos-lista li {
+  position: relative;
+  margin-bottom: 2.5em;
+  padding-bottom: 1.5em;
+}
+.proyectos-lista li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.proyectos-lista li::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 0.3em;
+  width: 24px;
+  height: 24px;
+  background: #111;
+  border: 6px solid #6dd5ed;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px #00c6fb44;
+  z-index: 2;
+}
+.proyectos-lista strong {
+  display: block;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.5em;
+  color: #6dd5ed;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.04em;
+}
+.proyectos-lista p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0;
+  font-family: monospace;
+  opacity: 0.92;
+}
+@media (max-width: 900px) {
+  .proyectos-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 1.2em;
+  }
+  .proyectos-card-right {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+  .proyectos-design, .proyectos-dev {
+    font-size: 3.2em;
+  }
+  .proyectos-bar {
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .proyectos-card {
+    max-width: 99vw;
+    padding: 0;
+  }
+  .proyectos-card-content {
+    padding: 1.2em 0.5em;
+  }
+  .proyectos-nombre {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .proyectos-design, .proyectos-dev {
+    font-size: 2em;
+  }
+  .proyectos-bar {
+    height: 50px;
+    margin-right: 0.7em;
+  }
+  .proyectos-desc-text {
+    font-size: 1em;
+  }
+}
+@media (max-width: 700px) {
+  .proyectos-lista {
+    padding-left: 30px;
+    min-width: 0;
+    max-width: 99vw;
+  }
+  .proyectos-lista li::before {
+    left: -22px;
+    width: 16px;
+    height: 16px;
+    border-width: 4px;
+  }
+  .proyectos-lista strong {
+    font-size: 1.1em;
+  }
+}

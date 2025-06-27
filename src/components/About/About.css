@@ -1,13 +1,18 @@
-.card-premios {
-  background: rgba(255,255,255,0.1);
-  border-radius: 1.5em;
-  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
-  padding: 2em 2em 1.5em 2em;
-  margin: 2em auto;
-  max-width: 900px;
-  border: none;
-  transition: box-shadow 0.2s, border 0.2s;
+.card-description {
+  padding: 240px 0;
+  margin: 1em auto;
+  background: #000;
+  width: 100vw;
+  display: flex;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  justify-content: center;
 }
+.card-description:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+}
+
 .card-premios:hover {
   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
 }
@@ -17,3 +22,87 @@
 .card-premios strong {
   color: #ff6ec4;
 }
+
+.profile-picture-2 {
+  margin: 80px 50px;
+  position: relative;
+  display: inline-block;
+}
+.profile-picture-2 img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 4px solid #4bc7b7;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  margin-bottom: 1.5em;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.profile-picture-2:hover img:first-child {
+  transform: scale(1.07) rotate(-30deg);
+  box-shadow: 0 8px 32px 0 rgba(255,110,196,0.25);
+}
+.profile-icon {
+  position: absolute;
+  left: 10px;
+  top: 10%;
+  transform: translate(-10%) scale(1.2);
+  opacity: 0;
+  transition: opacity 0.1s, left 0.2s;
+  width: 30px!important;
+  height: 30px!important;
+  z-index: 2;
+  border: none!important;
+}
+.profile-picture-2:hover .profile-icon {
+  opacity: 1;
+  left: -90px;
+  width: 130px!important;
+  height: 130px!important;
+  transition: opacity 0.3s, left 0.3s;
+}
+
+.about-description {
+  width: auto;
+}
+.about-description p {
+  margin: 1.5em 0 0 0;
+  font-size: 1.65em;
+  opacity: 0.9;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+}
+.about-description button {
+  float: right;
+}
+
+.about-nombre {
+  color: #ff6ec4;
+  font-family: 'Pacifico', cursive;
+  font-size: 5.42em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: -50px 0 -4px -110px;
+  line-height: 1.1;
+}
+
+.about-text {
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: -42px auto 0;
+  line-height: 1.1;
+  width: 420px;
+  text-align: center;
+  background: #646cff;
+  padding: 2em;
+  border: 4px solid #4bc7b8;
+}
+

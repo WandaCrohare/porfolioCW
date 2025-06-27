@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&display=swap');
+
+.links-hero-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('/assets/wandangel.png') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.links-card {
+  background: #11111194;
+  max-width: 420px;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  z-index: 2;
+  position: relative;
+  padding: 2.5em 2em 2.5em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-title {
+color: #fff;
+font-family: 'Pacifico', cursive;
+font-size: 3.5em;
+margin: 0 0 0.6em 0;
+letter-spacing: 0.04em;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.links-btn {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background: linear-gradient(90deg, #ff6ec4 0%, #f65a70 100%);
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.2em;
+  padding: 0.9em 1.5em;
+  text-decoration: none;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.links-btn:hover {
+  background: linear-gradient(90deg, #f65a70 0%, #ff6ec4 100%);
+  transform: scale(1.05) rotate(-2deg);
+  color: #fff;
+}
+
+.links-icon {
+  width: 1.7em;
+  height: 1.7em;
+  filter: drop-shadow(0 2px 8px #ff6ec4aa);
+}
+
+.links-form {
+  margin-top: 2.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+
+.links-input {
+  width: 100%;
+  max-width: 340px;
+  padding: 0.8em 1em;
+  border-radius: 1em;
+  border: none;
+  font-size: 1.1em;
+  font-family: 'Oswald', Arial, sans-serif;
+  background: rgba(255,255,255,0.13);
+  color: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  outline: none;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.links-input:focus {
+  background: rgba(255,255,255,0.22);
+  box-shadow: 0 4px 16px 0 #ff6ec4aa;
+}
+
+.links-btn-send {
+  background: linear-gradient(90deg, #25d366 0%, #ff6ec4 100%);
+  color: #fff;
+  font-size: 1.1em;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 1.2em;
+  padding: 0.8em 2em;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.links-btn-send:hover {
+  background: linear-gradient(90deg, #ff6ec4 0%, #25d366 100%);
+  transform: scale(1.05) rotate(-2deg);
+}
