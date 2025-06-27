@@ -1,7 +1,7 @@
 .tooling-section {
   max-width: 1200px;
-  margin: 3em auto;
-  background: #448944;
+  margin: -12em auto 130px;
+  background: rgb(255 255 255);
   border-radius: 2em;
   padding: 2.5em 2em;
 }
@@ -30,7 +30,22 @@
   min-width: 200px;
 }
 .tooling-card span {
-  color: #7ee787;
+  color: #fff;
   font-family: 'monospace';
   font-size: 1.5em;
+}
+
+.card-tools {
+  max-width: 1200px;
+  margin: -11em auto 11em;
+  background: #fff;
+  border-radius: 2em;
+  padding: 2.5em 2em;
+}
+
+.grid-tooling {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2em;
+  justify-items: center;  
 }

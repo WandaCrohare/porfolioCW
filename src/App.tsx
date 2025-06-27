@@ -18,9 +18,9 @@ function App() {
 				<Route path="/" element={
 					<main>
 						<Hero />
-            <About />
-						<Proyectos />
+						<About />
 						<Tooling />
+						<Proyectos />
 						<Contacto />
 					</main>
 				} />

@@ -82,9 +82,9 @@
   background: #111;
   max-width: 900px;
   width: 90vw;
-  margin: 0 auto;
+  margin: 0 0 0 35vw;
   border-radius: 0;
-  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.18);
+  box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.18);
   z-index: 2;
   position: relative;
   padding: 0;
@@ -128,6 +128,10 @@
   text-transform: uppercase;
   margin: 0 0 0 20px;
 }
+.proyectos-design {
+  margin: 0 0 0 -28px;
+}
+
 .proyectos-span-small {
   position: absolute;
   left: 11em;
@@ -142,7 +146,7 @@
   align-items: flex-start;
   margin-left: 2.5em;
   position: absolute;
-  top: 20em;
+  top: 27em;
   left: 0;
 }
 .proyectos-bar {
@@ -162,10 +166,16 @@
   text-align: left;
   margin-top: 0.2em;
 }
+
+.proyectos-desc-text img {
+  width: 41vw;
+  position: absolute;
+  right: 30px;
+}
 .proyectos-lista {
   position: relative;
   margin: 3em 0 0 40px;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 16px;
   list-style: none;
   border-left: 8px solid;
   border-image: linear-gradient(to bottom, #00c6fb, #ff6ec4, #f5ee73) 1;
@@ -185,11 +195,11 @@
   content: '';
   position: absolute;
   left: -38px;
-  top: 0.3em;
+  top: 2px;
   width: 24px;
   height: 24px;
   background: #111;
-  border: 6px solid #6dd5ed;
+  border: 6px solid #fff;
   border-radius: 50%;
   box-shadow: 0 2px 8px #00c6fb44;
   z-index: 2;
@@ -198,17 +208,34 @@
   display: block;
   font-family: 'Oswald', Arial, sans-serif;
   font-size: 1.5em;
-  color: #6dd5ed;
-  margin-bottom: 0.2em;
+  margin: 0.2em 0 0 0.8em;
   letter-spacing: 0.04em;
 }
 .proyectos-lista p {
   color: #fff;
-  font-size: 1.1em;
-  margin: 0;
+  font-size: 1.2em;
+  margin: 10px 0 0 1.3em;
   font-family: monospace;
   opacity: 0.92;
 }
+
+.proyectos-lista .title-1 {
+  color: #34c1f7;
+}
+.proyectos-lista .title-2 {
+  color: #af99df;
+}
+.proyectos-lista .title-3 {
+  color: #fc71c7;
+}
+.proyectos-lista .title-4 {
+  color: #fda3a6;
+}
+.proyectos-lista .title-5 {
+  color: #f8d984;
+}
+
+
 @media (max-width: 900px) {
   .proyectos-card-content {
     flex-direction: column;

@@ -60,9 +60,8 @@ body {
 button {
   background: linear-gradient(90deg, #ff6ec4 0%, #f65a70 100%);
   color: #fff;
-  border: none;
-  border-radius: 1.2em;
-  padding: 0.6em 1.6em;
+  border-radius: 30px;
+  padding: 1.2em 2.6em;
   font-size: 1.5em;
   font-family: monospace;
   font-weight: 600;
@@ -72,6 +71,7 @@ button {
   text-decoration: none;
   transition: background 0.3s, transform 0.2s;
   display: inline-block;
+  border: #fff solid 2px
 }
 button:hover {
   background: linear-gradient(90deg, #7873f5 0%, #ff6ec4 100%);
