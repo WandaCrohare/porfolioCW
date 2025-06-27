@@ -1,8 +1,9 @@
 import './Teams.css';
 import { Tooling } from '../Tooling/Tooling';
+import { useTranslation } from 'react-i18next';
 
 export function Teams() {
-
+  const { t } = useTranslation();
   return (
     <section className="teams-bg">
       <div className="teams-bg-overlay">
@@ -10,18 +11,10 @@ export function Teams() {
           <div className="teams-card-content">
             <div className="teams teams-card-left">
               <div className="teams-titulos">
-                <span className="teams-nombre">Ok, quién sos?</span>
-                <span className="teams-design">ABOUT ME</span>
+                <span className="teams-nombre">{t('teams.intro')}</span>
+                <span className="teams-design">{t('header.about')}</span>
               </div>
-              <p>
-                Soy Wanda Croharé, desarrolladora web, diseñadora UX/UI y estratega digital. 
-                <br />
-                Con 14 años de experiencia, he trabajado con emprendedores y empresas para llevar sus ideas a la realidad.
-                <br /> <br />
-                Me gusta crear productos funcionales, claros y bien pensados para vos. Creo en la tecnología y el diseño con propósito. El poder de las buenas ideas!
-                <br /> <br />
-                También me gustan el café, los libros y el chocolate.
-              </p>
+              <p>{t('teams.about')}</p>
               <div className='social-glass-2'>
                 <ul className='social-links'>
                   <li>
@@ -53,8 +46,8 @@ export function Teams() {
             </div>
             <div className="team-break-color"></div>
             <div className="teams-titulos-2">
-                <span className="teams-nombre-2">Que herramientas usas?</span>
-                <span className="teams-design-2">MY TOOLS</span>
+              <span className="teams-nombre-2">{t('teams.toolsTitle')}</span>
+              <span className="teams-design-2">{t('teams.tools')}</span>
             </div>
             <Tooling />
             {/* <div className="teams-titulos-2">

@@ -1,0 +1,60 @@
+{
+  "header": {
+    "about": "Sobre mí",
+    "services": "¿Qué puedo",
+    "works": "Mis trabajos",
+    "meeting": "Agendar reunión",
+    "contact": "Contáctame",
+    "subtitle": "UX/IU, Desarrolladora, IA, Soluciones."
+  },
+  "hero": {
+    "title": "¡Hola! Soy Wanda",
+    "subtitle": "DESIGNER",
+    "subtitle-2": "DEV",
+    "description": "Hago cositas para la web ᢉ𐭩"
+  },
+  "teams": {
+    "intro": "Ok, ¿Quién soy?",
+    "about": "Soy Wanda Croharé, desarrolladora web, diseñadora UX/UI y estratega digital.\nCon 14 años de experiencia, he trabajado con emprendedores y empresas para llevar sus ideas a la realidad.\nMe gusta crear productos funcionales, claros y bien pensados para vos. Creo en la tecnología y el diseño con propósito. ¡El poder de las buenas ideas!\nTambién me gustan el café, los libros y el chocolate.",
+    "toolsTitle": "¿Qué herramientas uso?",
+    "tools": "MIS HERRAMIENTAS"
+  },
+  "proyectos": {
+    "intro": "Entonces...",
+    "dev": "hacer?",
+    "item1": {
+      "title": "Diseño y desarrollo web a medida",
+      "desc": "Desde sitios institucionales hasta plataformas complejas: desarrollo frontend responsive, limpio y funcional, optimizado para todos los dispositivos."
+    },
+    "item2": {
+      "title": "UX/UI & prototipado",
+      "desc": "Diseño centrado en la experiencia del usuario: wireframes, prototipos interactivos, testeo de usabilidad y microinteracciones que encantan."
+    },
+    "item3": {
+      "title": "Consultoría en IA, diseño e innovación",
+      "desc": "Te ayudo a integrar inteligencia artificial, optimizar procesos o mejorar la experiencia digital de tu marca o producto."
+    },
+    "item4": {
+      "title": "Gestión de proyectos",
+      "desc": "Lidero equipos y proyectos digitales de punta a punta, aplicando metodologías ágiles para que todo fluya (y se entregue a tiempo)."
+    },
+    "item5": {
+      "title": "Soluciones creativas para ideas únicas",
+      "desc": "¿Tenés un proyecto loco, artístico, técnico o imposible? Hablemos. Me encantan los desafíos."
+    }
+  },
+  "works": {
+    "title": "Mis trabajos",
+    "intro": "Te muestro un poco..."
+  },
+  "contact": {
+    "title": "Conectemos",
+    "desc1": "Siempre estoy interesada en proyectos de diseño UX/UI, desarrollo frontend, Webflow, WordPress y consultoría digital.\n¡Me entusiasman las ideas nuevas y los negocios que están por nacer!",
+    "question": "¿Tienes algo en mente?",
+    "desc2": "Escríbeme y lo hacemos realidad.",
+    "button": "Contactar ahora"
+  },
+  "footer": {
+    "built": "Diseñado y desarrollado por Wanda Croharé | 2025"
+  }
+}

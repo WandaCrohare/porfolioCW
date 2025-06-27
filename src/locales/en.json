@@ -1,0 +1,60 @@
+{
+  "header": {
+    "about": "About Me",
+    "services": "What can",
+    "works": "My Works",
+    "meeting": "Book a Meeting",
+    "contact": "Contact me",
+    "subtitle": "UX/IU, Developer, IA, Solubtitle."
+  },
+  "hero": {
+    "title": "Hi! I'm Wanda",
+    "subtitle": "DESIGNER",
+    "subtitle-2": "DEV",
+    "description": "I craft web things ᢉ𐭩"
+  },
+  "teams": {
+    "intro": "So, who am I?",
+    "about": "I'm Wanda Croharé, web developer, UX/UI designer and digital strategist.\nWith 14 years of experience, I've worked with entrepreneurs and companies to bring their ideas to life.\nI love creating functional, clear and well-thought-out products for you. I believe in technology and design with purpose. The power of good ideas!\nI also love coffee, books and chocolate.",
+    "toolsTitle": "What tools do I use?",
+    "tools": "MY TOOLS"
+  },
+  "proyectos": {
+    "intro": "So...",
+    "dev": "I do?",
+    "item1": {
+      "title": "Custom web design and development",
+      "desc": "From institutional sites to complex platforms: responsive, clean and functional frontend development, optimized for all devices."
+    },
+    "item2": {
+      "title": "UX/UI & prototyping",
+      "desc": "User-centered design: wireframes, interactive prototypes, usability testing and delightful microinteractions."
+    },
+    "item3": {
+      "title": "AI, design & innovation consulting",
+      "desc": "I help you integrate artificial intelligence, optimize processes or improve your brand or product's digital experience."
+    },
+    "item4": {
+      "title": "Project management",
+      "desc": "I lead digital teams and projects end-to-end, applying agile methodologies so everything flows (and gets delivered on time)."
+    },
+    "item5": {
+      "title": "Creative solutions for unique ideas",
+      "desc": "Do you have a crazy, artistic, technical or impossible project? Let's talk. I love challenges."
+    }
+  },
+  "works": {
+    "title": "My Works",
+    "intro": "Let me show you..."
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "desc1": "I'm always interested in UX/UI design projects, frontend development, Webflow, WordPress, and digital consulting.\nI'm excited about new ideas and businesses about to be born!",
+    "question": "Do you have something in mind?",
+    "desc2": "Write to me and let's make it happen.",
+    "button": "Contact now"
+  },
+  "footer": {
+    "built": "Designed & Built by Wanda Croharé | 2025"
+  }
+}

@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Hero.css';
 
-const NOMBRE_ANIMADO = '¡Hola! Soy Wanda';
-
 export function Hero() {
+  const { t } = useTranslation();
   const [nombreAnimado, setNombreAnimado] = useState('');
 
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
-      setNombreAnimado(NOMBRE_ANIMADO.slice(0, i + 1));
+      setNombreAnimado(t('hero.title').slice(0, i + 1));
       i++;
-      if (i === NOMBRE_ANIMADO.length) clearInterval(interval);
+      if (i === t('hero.title').length) clearInterval(interval);
     }, 70);
     return () => clearInterval(interval);
-  }, []);
+  }, [t]);
 
   return (
     <section className="hero-bg">
@@ -26,15 +26,15 @@ export function Hero() {
             <div className="hero-card-left">
               <span className="hero-nombre">{nombreAnimado}</span>
               <div className="hero-titulos">
-                <span className="hero-design">DESIGNER</span>
-                <span className='span-small'>&</span>
-                <span className="hero-dev">DEV</span>
+                <span className="hero-design">{t('hero.subtitle')}</span>
+                <span className="span-small">&amp;</span>
+                <span className="hero-dev">{t('hero.subtitle-2')}</span>
               </div>
             </div>
             <div className="hero-card-right">
               <div className="hero-bar"></div>
               <div className="hero-desc-text">
-                <span>Hago cositas <br/> para la web ᢉ𐭩</span>
+                <span>{t('hero.description')}</span>
               </div>
             </div>
           </div>

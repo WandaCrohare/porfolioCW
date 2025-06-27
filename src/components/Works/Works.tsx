@@ -1,4 +1,5 @@
 import './Works.css';
+import { useTranslation } from 'react-i18next';
 
 const proyectos = [
 	{
@@ -40,7 +41,7 @@ const proyectos = [
 
 
 export function Works() {
-
+  const { t } = useTranslation();
   return (
     <section className="works-bg">
       <div className="works-bg-overlay">
@@ -49,8 +50,8 @@ export function Works() {
             <div className="works-card-left">
 
               <div className="works-titulos">
-                <span className="works-nombre">Pero mostrame que haces</span>
-                <span className="works-design">MY WORKS</span>
+                <span className="works-nombre">{t('works.intro')}</span>
+                <span className="works-design">{t('works.title')}</span>
               </div>
 
             </div>
