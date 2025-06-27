@@ -18,9 +18,10 @@ function App() {
 				<Route path="/" element={
 					<main>
 						<Hero />
+						<Proyectos />
 						<About />
 						<Tooling />
-						<Proyectos />
+						
 						<Contacto />
 					</main>
 				} />

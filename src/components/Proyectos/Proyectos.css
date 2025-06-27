@@ -87,7 +87,7 @@
   box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.18);
   z-index: 2;
   position: relative;
-  padding: 0;
+  padding: 0em 0 6em 0;
 }
 .proyectos-card-content {
   display: flex;
@@ -168,9 +168,10 @@
 }
 
 .proyectos-desc-text img {
-  width: 41vw;
+  width: 48vw;
   position: absolute;
   right: 30px;
+  margin: -17em 0 0 0;
 }
 .proyectos-lista {
   position: relative;
