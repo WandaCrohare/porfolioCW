@@ -2,7 +2,8 @@
   "header": {
     "about": "Sobre mí",
     "services": "¿Qué puedo",
-    "works": "Mis trabajos",
+    "h-services": "Servicios",
+    "works": "Trabajos",
     "meeting": "Agendar reunión",
     "contact": "Contáctame",
     "subtitle": "UX/IU, Desarrolladora, IA, Soluciones."
@@ -16,8 +17,8 @@
   "teams": {
     "intro": "Ok, ¿Quién soy?",
     "about": "Soy Wanda Croharé, desarrolladora web, diseñadora UX/UI y estratega digital.\nCon 14 años de experiencia, he trabajado con emprendedores y empresas para llevar sus ideas a la realidad.\nMe gusta crear productos funcionales, claros y bien pensados para vos. Creo en la tecnología y el diseño con propósito. ¡El poder de las buenas ideas!\nTambién me gustan el café, los libros y el chocolate.",
-    "toolsTitle": "¿Qué herramientas uso?",
-    "tools": "MIS HERRAMIENTAS"
+    "toolsTitle": "¿Con qué trabajo?",
+    "tools": "HERRAMIENTAS"
   },
   "proyectos": {
     "intro": "Entonces...",
@@ -44,17 +45,17 @@
     }
   },
   "works": {
-    "title": "Mis trabajos",
+    "title": "Mi Trabajo",
     "intro": "Te muestro un poco..."
   },
   "contact": {
     "title": "Conectemos",
-    "desc1": "Siempre estoy interesada en proyectos de diseño UX/UI, desarrollo frontend, Webflow, WordPress y consultoría digital.\n¡Me entusiasman las ideas nuevas y los negocios que están por nacer!",
-    "question": "¿Tienes algo en mente?",
+    "desc1": "Siempre interesada en proyectos de diseño UX/UI, desarrollo frontend, creación web, WordPress y consultoría digital.\n¡Me entusiasman las ideas nuevas y los negocios que están por nacer!",
+    "question": "¿Tenés algo en mente?",
     "desc2": "Escríbeme y lo hacemos realidad.",
     "button": "Contactar ahora"
   },
   "footer": {
-    "built": "Diseñado y desarrollado por Wanda Croharé | 2025"
+    "built": "Diseñado y desarrollado por Wanda Croharé | 2025 | Construido con React, CSS3, HTML5, JavaScript y TypeScript | Hosteado en Vercel."
   }
 }

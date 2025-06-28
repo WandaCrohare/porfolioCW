@@ -2,6 +2,7 @@
   "header": {
     "about": "About Me",
     "services": "What can",
+    "h-services": "Services",
     "works": "My Works",
     "meeting": "Book a Meeting",
     "contact": "Contact me",
@@ -16,7 +17,7 @@
   "teams": {
     "intro": "So, who am I?",
     "about": "I'm Wanda Croharé, web developer, UX/UI designer and digital strategist.\nWith 14 years of experience, I've worked with entrepreneurs and companies to bring their ideas to life.\nI love creating functional, clear and well-thought-out products for you. I believe in technology and design with purpose. The power of good ideas!\nI also love coffee, books and chocolate.",
-    "toolsTitle": "What tools do I use?",
+    "toolsTitle": "What do I use?",
     "tools": "MY TOOLS"
   },
   "proyectos": {
@@ -49,12 +50,12 @@
   },
   "contact": {
     "title": "Let's Connect",
-    "desc1": "I'm always interested in UX/UI design projects, frontend development, Webflow, WordPress, and digital consulting.\nI'm excited about new ideas and businesses about to be born!",
+    "desc1": "I'm always interested in UX/UI design projects, frontend development, web craft, WordPress, and digital consulting.\nI'm excited about new ideas and businesses about to be born!",
     "question": "Do you have something in mind?",
     "desc2": "Write to me and let's make it happen.",
     "button": "Contact now"
   },
   "footer": {
-    "built": "Designed & Built by Wanda Croharé | 2025"
+    "built": "Designed & Built by Wanda Croharé | 2025 | Built with React, CSS3, HTML5, JavaScript and TypeScript | Hosted on Vercel."
   }
 }

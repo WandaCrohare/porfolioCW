@@ -101,22 +101,14 @@
 
 .works-nombre {
   color: #f5ee73;
-  font-family: 'Pacifico', cursive;
-  font-size: 2em;
+  font-family: monospace;
+  font-size: 2.9em;
   letter-spacing: 0.1em;
   font-weight: 400;
   display: block;
   text-align: left;
   margin: 0 0 -13px 0px;
   line-height: 1.1;
-}
-
-.span-small {
-  position: absolute;
-  left: 13.6em;
-  font-size: 49px;
-  top: 3.75em;
-  font-family: 'Playfair Display';
 }
 
 .works-titulos {
@@ -313,49 +305,89 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .works-bg, .works-bg-overlay {
+    height: auto;
+    min-height: 700px;
+  }
+  .works-card {
+    max-width: 90vw;
+    padding: 2em 4em 2em 2em;
+    left: 0;
+    top: 4em;
+  }
+  .works-me {
+    width: 400px;
+    left: 40em;
+    top: 30px;
+  }
+}
 @media (max-width: 1100px) {
+  .works-bg, .works-bg-overlay {
+    height: auto;
+    min-height: 500px;
+  }
+  .works-card {
+    max-width: 99vw;
+    padding: 1.2em 1.2em 1.2em 1.2em;
+    left: 0;
+    top: 2em;
+  }
+  .works-me {
+    width: 220px;
+    left: 20em;
+    top: 10px;
+  }
   .works-grid {
     grid-template-columns: 1fr;
-    gap: 3rem 0;
-    padding: 3rem 2vw 2rem 2vw;
+    gap: 2em 0;
+    padding: 2em 0.5em;
+  }
+}
+@media (max-width: 700px) {
+  .works-bg, .works-bg-overlay {
+    height: auto;
+    min-height: 300px;
+    padding: 0;
+  }
+  .works-card {
+    max-width: 99vw;
+    padding: 0.5em 0.2em;
+    left: 0;
+    top: 1em;
+  }
+  .works-me {
+    width: 110px;
+    left: 2em;
+    top: 2px;
+  }
+  .works-grid {
+    grid-template-columns: 1fr;
+    gap: 1em 0;
+    padding: 1em 0.2em;
   }
   .works-card-grid {
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 220px;
+    min-height: 120px;
   }
   .works-img-grid {
     width: 100%;
-    height: 180px;
-    border-right: none;
-    border-bottom: 4px solid #b971ee;
+    height: 90px;
   }
   .works-titulos-grid {
-    padding: 1.5rem 1.5rem 1.5rem 1.2rem;
+    padding: 0.7em 0.7em 0.7em 0.7em;
   }
   .works-nombre-grid {
-    font-size: 2.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .works-grid {
-    padding: 1.5rem 0.5rem;
-    gap: 2rem 0;
-  }
-  .works-card-grid {
-    min-height: 140px;
-  }
-  .works-img-grid {
-    height: 110px;
-  }
-  .works-titulos-grid {
-    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
-  }
-  .works-nombre-grid {
-    font-size: 1.1rem;
+    font-size: 1em;
   }
   .works-design-grid {
-    font-size: 0.9rem;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 400px) {
+  .works-nombre-grid {
+    font-size: 0.7em;
+  }
+  .works-design-grid {
+    font-size: 0.6em;
   }
 }

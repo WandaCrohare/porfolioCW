@@ -56,6 +56,7 @@
 /* Fondo rosa con manchas tipo blobs/gradientes */
 .hero-bg {
   height: 917px;
+  margin: -14px 0 0 0;
   width: 100vw;
   background: linear-gradient(120deg, #e97bb0 0%, #fc7f9a 100%);
   position: relative;
@@ -287,7 +288,94 @@
   transform: scale(1.13);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 816px;
+  }
+  .hero-card {
+    max-width: 90vw;
+  }
+  .hero-me {
+    left: 48em;
+    top: 40px;
+    width: 700px;
+  }
+}
+@media (max-width: 1400px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 720px;
+  }
+  .hero-card {
+    max-width: 90vw;
+  }
+  .hero-me {
+    width: 614px;
+    left: 48em;
+    top: 40px;
+  }
+}
+@media (max-width: 1300px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 720px;
+  }
+  .hero-card {
+    padding: 5em 25em 5em 10em;
+  }
+  .hero-me {
+    width: 580px;
+    left: 44em;
+    top: 78px;
+  }
+  .hero-card-right {
+    top: 14.2em;
+    left: 19.5em;
+  }
+  .span-small {
+    left: 12em;
+  }
+  .social-glass {
+    left: 10em;
+    top: 510px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 655px;
+  }
+  .hero-card {
+    top: 8em;
+    padding: 5em 15em 5em 10em;
+  }
+  .hero-me {
+    width: 520px;
+    left: 42em;
+    top: 80px;
+  }
+  .span-small {
+    left: 12em;
+  }
+  .social-links img {
+    width: auto;
+    height: 40px;
+  }
+}
+@media (max-width: 1040px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 620px;
+  }
+  .hero-card {
+    max-width: 90vw;
+  }
+  .span-small {
+    left: 12em;
+  }
+  .hero-me {
+    width: 490px;
+    left: 37em;
+    top: 80px;
+  }
+}
+@media (max-width: 980px) {
   .hero-card-content {
     flex-direction: column;
     align-items: flex-start;
@@ -295,38 +383,255 @@
   }
   .hero-card-right {
     margin-left: 0;
-    margin-top: 2em;
-  }
+    top: 11.4em;
+   }
   .hero-design, .hero-dev {
-    font-size: 3.2em;
+    font-size: 4.6em;
   }
   .hero-bar {
-    height: 80px;
+    height: 70px;
   }
-}
-
-@media (max-width: 600px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 520px;
+  }
   .hero-card {
-    max-width: 99vw;
-    padding: 0;
+    top: 7em;
+    padding: 3em 13em 3em 10em;
   }
-  .hero-card-content {
-    padding: 1.2em 0.5em;
+  .span-small {
+    left: 12em;
+    font-size: 40px;
+    top: 3.75em;
+  }
+  .hero-me {
+    width: 400px;
+    right: -20px;
+    left: auto;
+    top: 80px;
+  }
+  .hero-desc-text {
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    width: 130px;
   }
   .hero-nombre {
-    font-size: 1em;
-    margin-bottom: 1em;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.75rem;
   }
+  .social-glass {
+    left: 10em;
+    top: 400px;
+    border-radius: 20px;
+    width: 240px;
+    border: solid 2px #fff;
+  }
+  .social-links img {
+    width: auto;
+    height: 30px;
+  }
+}
+@media (max-width: 860px) {
+   .hero-bg, .hero-bg-overlay {
+    height: 520px;
+  }
+  .hero-card {
+    padding: 3em 10em 3em 6em;
+  }
+  .span-small {
+    left: 10.5em;
+  }
+  .hero-me {
+    width: 400px;
+    right: -2em;
+    top: 80px;
+  }
+  .hero-card-right {
+    top: 11.2em;
+    left: 15.5em;
+  }
+  .social-glass {
+    left: 7em;
+  }
+}
+@media (max-width: 750px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 520px;
+  }
+  .hero-card {
+    padding: 3em 9em 3em 3em;
+  }
+  .span-small {
+    left: 9.3em;
+  }
+  .hero-me {
+    width: 400px;
+    right: -3em;
+    top: 80px;
+  }
+  .hero-card-right {
+    top: 11.2em;
+    left: 12.5em;
+  }
+  .social-glass {
+    left: 4em;
+  }
+  .social-links {
+    display: flex;
+    gap: 1.1em;
+    align-items: center;
+    width: 280px;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
   .hero-design, .hero-dev {
-    font-size: 2em;
+    font-size: 3.6em;
+  }
+  .hero-bg, .hero-bg-overlay {
+    height: 440px;
+    margin: -31px 0 0 0;
+  }
+  .span-small {
+    left: 10.1em;
+    font-size: 30px;
+    top: 3.9em;
+  }
+  .hero-nombre {
+    font-size: 1.38rem;
+  }
+  .hero-me {
+    width: 380px;
+    right: -4em;
+    top: 20px;
   }
   .hero-bar {
+    width: 3px;
+    border-radius: 3px;
+    margin-right: 1em;
+    margin-top: 0;
     height: 50px;
-    margin-right: 0.7em;
   }
   .hero-desc-text {
     font-size: 1em;
+    margin-top: 0.3em;
+    width: 100px;
   }
+  .hero-card-right {
+    top: 9.2em;
+    left: 10.8em;
+  }
+  .hero-card {
+    padding: 2em 9em 2em 3em;
+    top: 5em;
+  }
+  .social-glass {
+    left: 4em;
+    top: 310px;
+    width: 210px;
+  }
+  .social-links {
+    gap: 1em;
+    width: 200px;
+    padding: 0;
+    margin: 12px 0;
+  }
+}
+@media (max-width: 620px) {
+  .hero-design, .hero-dev {
+    font-size: 3.6em;
+  }
+  .hero-bg, .hero-bg-overlay {
+    height: 390px;
+  }
+  .span-small {
+    left: 10.1em;
+    font-size: 30px;
+    top: 3.9em;
+  }
+  .hero-nombre {
+    font-size: 1.38rem;
+  }
+  .hero-me {
+    width: 300px;
+    right: -4em;
+    top: 60px;
+  }
+  .hero-bar {
+    width: 3px;
+    border-radius: 3px;
+    margin-right: 1em;
+    margin-top: 0;
+    height: 50px;
+  }
+  .hero-desc-text {
+    font-size: 1em;
+    margin-top: 0.3em;
+    width: 100px;
+  }
+  .hero-card-right {
+    top: 9.2em;
+    left: 10.8em;
+  }
+  .hero-card {
+    padding: 2em 9em 2em 3em;
+    top: 5em;
+  }
+  .social-glass {
+    left: 4em;
+    top: 310px;
+    width: 210px;
+  }
+  .social-links {
+    gap: 1em;
+    width: 200px;
+    padding: 0;
+    margin: 12px 0;
+  }
+}
+@media (max-width: 550px) {
+  .hero-bg, .hero-bg-overlay {
+    height: 700px;
+  }
+  .hero-card {
+    padding: 2em 1.5em 2em 1.5em;
+    top: 4em;
+    width: 100vw;
+  }
+  .hero-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 2.8em;
+  }
+  .hero-me {
+    width: 380px;
+    right: 10vw;
+    top: 280px;
+  }
+  .social-glass {
+      right: 2em;
+      top: 280px;
+      width: 60px;
+      height: 220px;
+      left: auto;
+  }
+  .social-links {
+    gap: 1em;
+    width: 200px;
+    padding: 0;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 350px) {
+  .hero-me {
+    width: 380px;
+    right: 0vw;
+    top: 280px;
+  }
+}
 }
 
 @keyframes blobPulse {
