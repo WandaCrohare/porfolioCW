@@ -19,12 +19,6 @@ const proyectos = [
 		subtitulo: 'UX/UI DESIGN',
 		imagen: '/assets/works/sindos.png',
 	},
-	{
-		nombre: 'PALM FOUNDATION',
-		subtitulo: 'FRONTEND DEV',
-		imagen: '/assets/works/foundation.png',
-		link: 'https://palmfdn.org/',
-	},
   {
 		nombre: 'PALM NETWORK',
 		subtitulo: 'UX/UI DESIGN & FRONTEND DEV',
@@ -35,8 +29,13 @@ const proyectos = [
 		nombre: 'ARTISTS VALLEY',
 		subtitulo: 'UX/UI DESIGN & FRONTEND DEV',
 		imagen: '/assets/works/av.png',
+	},
+  {
+		nombre: 'PALM FOUNDATION',
+		subtitulo: 'FRONTEND DEV',
+		imagen: '/assets/works/foundation.png',
+		link: 'https://palmfdn.org/',
 	}
-
 ];
 
 
