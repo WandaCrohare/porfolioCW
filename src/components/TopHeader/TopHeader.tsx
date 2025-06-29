@@ -18,6 +18,18 @@ function handleNavClick(
 	}
 }
 
+// Handler para Google Analytics eventos
+const handleSocialClick = (network: string) => {
+	// @ts-ignore
+	if (window.gtag) {
+		// @ts-ignore
+		window.gtag('event', 'click', {
+			event_category: 'Redes Sociales',
+			event_label: network,
+		});
+	}
+};
+
 export function TopHeader() {
 	const { t, i18n } = useTranslation();
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +63,10 @@ export function TopHeader() {
 				<div className="lang-switcher">
 					{i18n.language === 'es' ? (
 						<button
-							onClick={() => changeLang('en')}
+							onClick={() => {
+								handleSocialClick('Idioma-Inglés');
+								changeLang('en');
+							}}
 							aria-label="English"
 							className="lang-btn"
 						>
@@ -63,7 +78,10 @@ export function TopHeader() {
 						</button>
 					) : (
 						<button
-							onClick={() => changeLang('es')}
+							onClick={() => {
+								handleSocialClick('Idioma-Español');
+								changeLang('es');
+							}}
 							aria-label="Español"
 							className="lang-btn"
 						>

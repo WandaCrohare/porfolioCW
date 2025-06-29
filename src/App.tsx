@@ -11,7 +11,7 @@ import { Footer } from './components/Footer/Footer';
 import { Links } from './components/Links/Links';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+export function App() {
 	return (
 		<BrowserRouter>
 			<TopHeader />

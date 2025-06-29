@@ -16,6 +16,18 @@ export function Hero() {
     return () => clearInterval(interval);
   }, [t]);
 
+  // Handler para Google Analytics eventos
+  const handleSocialClick = (network: string) => {
+    // @ts-ignore
+    if (window.gtag) {
+      // @ts-ignore
+      window.gtag('event', 'click', {
+        event_category: 'Redes Sociales',
+        event_label: network,
+      });
+    }
+  };
+
   return (
     <section className="hero-bg">
       <div className="blob-light1"></div>
@@ -46,22 +58,22 @@ export function Hero() {
       <div className='social-glass'>
         <ul className='social-links'>
           <li>
-          <a href="https://www.instagram.com/wandy.cro" aria-label="Instagram" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/wandy.cro" aria-label="Instagram" target="_blank" rel="noreferrer" onClick={() => handleSocialClick('Instagram')}>
             <img src="/assets/icons/instagram.svg" alt="Instagram" className="hero-icon"/>
           </a>
           </li>
           <li>
-            <a href="https://github.com/WandaCrohare" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <a href="https://github.com/WandaCrohare" aria-label="GitHub" target="_blank" rel="noreferrer" onClick={() => handleSocialClick('GitHub')}>
               <img src="/assets/icons/github.svg" alt="GitHub" className="hero-icon"/>
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/wcrohare/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/wcrohare/" aria-label="Linkedin" target="_blank" rel="noreferrer" onClick={() => handleSocialClick('LinkedIn')}>
               <img src="/assets/icons/linkedin.svg" alt="Linkedin" className="hero-icon"/>
             </a>
           </li>
           <li>
-            <a href="mailto:wcrohare@gmail.com" aria-label="Email" target="_blank" rel="noreferrer">
+            <a href="mailto:wcrohare@gmail.com" aria-label="Email" target="_blank" rel="noreferrer" onClick={() => handleSocialClick('Email')}>
               <img src="/assets/icons/email.svg" alt="eMail" className="hero-icon"/>
             </a>
           </li>

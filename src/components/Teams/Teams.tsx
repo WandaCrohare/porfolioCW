@@ -4,6 +4,18 @@ import { useTranslation } from 'react-i18next';
 
 export function Teams() {
   const { t, i18n } = useTranslation();
+
+  const handleSocialClick = (network: string) => {
+    // @ts-ignore
+    if (window.gtag) {
+      // @ts-ignore
+      window.gtag('event', 'click', {
+        event_category: 'Redes Sociales',
+        event_label: network,
+      });
+    }
+  };
+
   return (
     <section className="teams-bg">
       <div className="teams-bg-overlay">
@@ -17,7 +29,13 @@ export function Teams() {
               <p>{t('teams.about')}</p>
               <ul className='social-links-conect'>
                 <li>
-                  <a href="https://www.linkedin.com/in/wcrohare/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.linkedin.com/in/wcrohare/"
+                    aria-label="Linkedin"
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => handleSocialClick('LinkedIn')}
+                  >
                     <img src="/assets/icons/linkedin.svg" alt="Linkedin" className="hero-icon"/>
                   </a>
                 </li>
@@ -32,6 +50,7 @@ export function Teams() {
                     download
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => handleSocialClick('CV')}
                     >
                     <img
                       src="/assets/icons/cv.png"
